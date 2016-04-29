@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/flames_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <EditText android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_name"
+        android:ems="10"
+        android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone"
+        android:textColor="#f30a0a">
+        <requestFocus />
+    </EditText>
+    <EditText android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_buddy_name"
+        android:ems="10"
+        android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone"
+        android:textColor="#f50d0d"
+        android:layout_below="@+id/editText1"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+    </RelativeLayout>
+
+    <ImageButton android:id="@+id/buttonSubmit"
+        android:layout_width="54dp"
+        android:layout_height="45dp"
+        android:src="@drawable/button_check"
+        android:onClick="checkRelation"
+        android:contentDescription="@string/buttonCheck"
+        android:focusable="false"
+        android:cropToPadding="false"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="46dp" />
+
+    <ImageButton android:id="@+id/buttonCancel"
+        android:layout_width="54dp"
+        android:layout_height="45dp"
+        android:src="@drawable/button_cancel"
+        android:contentDescription="@string/button_cancel"
+        android:layout_gravity="right"
+        android:layout_alignTop="@+id/buttonSubmit"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="73dp" />
+</RelativeLayout>
